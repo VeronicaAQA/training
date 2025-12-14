@@ -1,0 +1,20 @@
+Задача 5: Полиморфизм - Фигуры
+Создайте иерархию классов для фигур:
+Абстрактный класс Shape:
+Абстрактный метод double getArea().
+Абстрактный метод double getPerimeter().
+Класс Rectangle (прямоугольник), наследуется от Shape:
+Поля: width (ширина), height (высота).
+Реализует методы для расчёта площади и периметра.
+Класс Circle, наследуется от Shape:
+Поле: radius (радиус).
+Реализует методы для расчёта площади и периметра.
+Пример использования:
+
+Shape rectangle = new Rectangle(4, 5);
+Shape circle = new Circle(3);
+
+System.out.println("Площадь прямоугольника: " + rectangle.getArea());
+System.out.println("Периметр прямоугольника: " + rectangle.getPerimeter());
+System.out.println("Площадь круга: " + circle.getArea());
+System.out.println("Периметр круга: " + circle.getPerimeter());
