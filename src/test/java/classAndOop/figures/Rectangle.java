@@ -9,7 +9,6 @@ public class Rectangle extends Shape {
         this.height = height;
     }
 
-
     @Override
     public double getArea() {
         return width * height;
@@ -17,6 +16,6 @@ public class Rectangle extends Shape {
 
     @Override
     public double getPerimeter() {
-        return (2 * width * height);
+        return 2 * (width +height);
     }
 }
