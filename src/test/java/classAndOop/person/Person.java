@@ -1,5 +1,7 @@
 package classAndOop.person;
 
+import java.util.Objects;
+
 public class Person {
     private String name;
     private int age;
@@ -58,11 +60,15 @@ public class Person {
     public boolean equals(Object obj) {
         if (obj == this)
             return true;
-
-        if (obj.getClass() != this.getClass())
+        if (obj == null || getClass() != obj.getClass())
             return false;
 
         return (((Person) obj).age == this.age &&
                 ((Person) obj).name.equals(this.name));
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
     }
 }
