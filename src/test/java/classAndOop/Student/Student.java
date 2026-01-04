@@ -1,5 +1,7 @@
 package classAndOop.Student;
 
+import classAndOop.product.Product;
+
 import java.util.Objects;
 import java.util.UUID;
 
@@ -31,6 +33,7 @@ public class Student {
     }
 
     //метод, возвращающий строку с информацией о студенте
+    @Override
     public String toString() {
         return ("Student{id=" + id + ", name=" + name + ", gpa=" + gpa + "}");
     }
